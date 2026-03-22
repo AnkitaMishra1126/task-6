@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            list-style: none;
+        }
+        section{
+            background-color: rgb(213, 236, 246);
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .main-container{
+            background-color: whitesmoke;
+            border-radius: 10px;
+            display: flex;
+            padding: 3rem;
+        }
+        .main-container form{
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+        }
+        .L-part-form, .R-part-form{
+            flex-basis: 50%;
+        }
+        .L-part-form{
+            margin-top: 2rem;
+        }
+        .L-part-form h1{
+            text-transform: capitalize;
+            font-size: 3rem;
+            color: rgb(54, 196, 252);
+        }
+        .L-part-form p{
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgb(47, 47, 47);
+        }
+        .L-part-form ul{
+            margin-top: 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgb(47, 47, 47);
+        }
+        .L-part-form ul li{
+            margin-bottom: 0.8rem;
+            
+        }
+        .L-part-form ul li span{
+            font-size: 1rem;
+            font-weight: 800;
+            color: rgb(54, 196, 252);   
+            text-transform: capitalize;
+            line-height: 1.5;
+        }
+        .R-part-form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .R-part-form label{
+            text-transform: capitalize;
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgb(47, 47, 47);
+        }
+        .R-part-form input{
+            padding: 0.8rem 0.5rem;
+            border-radius: 10px;
+            border: 0.5px solid rgb(130, 130, 130);
+        }
+        .R-part-form input::placeholder{
+            color: rgb(130, 130, 130);
+        }
+        .R-part-form textarea{
+            padding: 1rem;
+            border-radius: 10px;
+            border: 0.5px solid rgb(130, 130, 130);
+        }
+        .R-part-form button{
+            text-transform: capitalize;
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: rgb(54, 196, 252);
+            color: white;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main-container">
+            <form>
+                <div class="L-part-form">
+                    <h1>get in touch</h1>
+                    <p>Have a stubborn stain or a special request? Drop us a line and we'll get back to you.</p>
+                    <ul>
+                        <li><span>email:</span>Q4yTt@example.com</li>
+                        <li><span>phone:</span> 123-456-789</li>
+                        <li>
+                            <span>address:</span> 1234 Main St, Anytown, USA
+                        </li>
+                    </ul>
+                </div>
+                <div class="R-part-form">
+                    <label for="name">Full name</label>
+                     <input type="text" placeholder="your name">
+                    <label for="email">email adress</label>
+                     <input type="text" placeholder="hello@example.com">
+                    <label for="phone">phone nmber</label>
+                     <input type="text" placeholder="active phone number">
+                    <label for="message">message</label>
+                     <textarea type="text" placeholder="tell us how we can help......"></textarea>
+                    <button>send message</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+</body>
+</html>
